@@ -27,6 +27,7 @@ SECRET_KEY = "django-insecure-41_@f0d$j7s%iygq!_uay+_ks6^_6&94+8u17wqopeaf89945q
 DEBUG = getenv("IS_DEPLOYMENT",True)
 
 ALLOWED_HOSTS = [
+    getenv("APP_HOST")
    
 ]
 
