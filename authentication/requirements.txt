@@ -3,6 +3,7 @@ Django==5.0.7
 django-phonenumber-field==8.0.0
 gunicorn==22.0.0
 packaging==24.1
+phonenumbers==8.13.42
 pillow==10.4.0
 sqlparse==0.5.1
 tzdata==2024.1
