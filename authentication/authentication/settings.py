@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from os import getenv
-
+ 
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-41_@f0d$j7s%iygq!_uay+_ks6^_6&94+8u17wqopeaf89945q"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = getenv("IS_DEPLOYMENT",True)
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+   
     "profile_app",
     "phonenumber_field",
     "django.contrib.admin",
@@ -118,11 +119,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT =BASE_DIR/'staticfiles'
-STATIC_URL = "static/"
 
+<<<<<<< HEAD
 MEDIA_URLS = "/media/"
 MEDIA_ROOT = BASE_DIR/"media"
+=======
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+>>>>>>> f45edfeb3b4f0b60550c93a7c467ba73630b4ffe
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
