@@ -26,9 +26,7 @@ SECRET_KEY = "django-insecure-41_@f0d$j7s%iygq!_uay+_ks6^_6&94+8u17wqopeaf89945q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv("IS_DEPLOYMENT",True)
 
-ALLOWED_HOSTS = [
-    getenv("APP_HOST")
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -123,7 +121,7 @@ USE_TZ = True
 STATIC_ROOT =BASE_DIR/'staticfiles'
 STATIC_URL = "static/"
 
-MEDIA_URLS = "/files/"
+MEDIA_URLS = "/media/"
 MEDIA_ROOT = BASE_DIR/"media"
 
 # Default primary key field type
