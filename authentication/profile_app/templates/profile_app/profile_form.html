@@ -13,7 +13,7 @@
 
     <div class="profile-edit-form">
         {%if profile.image%}
-        <img id="profile-preview" src="{{profile.image}}" alt="Profile Picture">
+        <img id="profile-preview" src="{{profile.image.url }}" alt="Profile Picture">
         {%else%}
         <img id="profile-preview"  src="{%static "images/profile.png"%}" alt="">
         {%endif%}

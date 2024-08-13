@@ -1,6 +1,9 @@
-/* General Styles */
 
-
+.section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .profile-card {
     background: #1e1e1e;
     border-radius: 20px;
@@ -10,12 +13,13 @@
     overflow: hidden;
     text-align: center;
     color: #e0e0e0;
-    transform:translate(50%,30%)
+    margin-top:5rem;
 }
 
 .profile-photo {
     background: #333;
     padding: 25px;
+   
 }
 
 .profile-photo img {
@@ -24,6 +28,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid #444;
+    object-fit:cover;
 }
 
 .profile-details {

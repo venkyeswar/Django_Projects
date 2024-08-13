@@ -1,4 +1,9 @@
-
+.section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+     
+}
 
 .login {
     background: rgba(28, 28, 28, 0.95);
@@ -7,7 +12,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     width: 360px;
     border: 1px solid #444;
-    transform: translate(50%);
+ 
     margin-top:4rem;
     
 }

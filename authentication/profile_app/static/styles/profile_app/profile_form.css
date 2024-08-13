@@ -30,6 +30,7 @@ h2{
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    object-fit:cover;
 }
 
 form {

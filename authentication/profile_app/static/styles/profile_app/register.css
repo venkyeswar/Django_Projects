@@ -1,3 +1,10 @@
+
+.section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 .register{
    
     align-items:center;
@@ -12,7 +19,7 @@
 }
 
 .register form {
-    transform:translate(50%);
+ 
     background: rgba(28, 28, 28, 0.95);
     padding: 30px;
     border-radius: 12px;
@@ -24,6 +31,9 @@
 .register form ul {
     list-style: none;
     padding: 0;
+}
+.register form h1{
+    color:rgb(136, 116, 185);
 }
 
 .register form li {
